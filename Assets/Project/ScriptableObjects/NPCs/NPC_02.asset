@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e38cfdf72d56f94f8bd9ddf6f5b81ee, type: 3}
   m_Name: NPC_02
   m_EditorClassIdentifier: 
-  npcID: 0
-  npcName: 
-  backstory: 
-  correctItemID: 0
-  correctIslandID: 0
+  npcID: 2
+  npcName: Mehmet
+  backstory: He was a student in a very prestigous college. Love extrem sport. Died
+    during skydiving.
+  correctItemID: 4
+  correctIslandID: 5

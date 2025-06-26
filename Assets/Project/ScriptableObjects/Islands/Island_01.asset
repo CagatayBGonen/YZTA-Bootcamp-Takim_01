@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85146de68429e694492c706c5d9eade6, type: 3}
   m_Name: Island_01
   m_EditorClassIdentifier: 
-  islandID: 0
-  islandName: 
-  previewImage: {fileID: 0}
+  islandID: 1
+  islandName: Dedication Island
+  previewImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
