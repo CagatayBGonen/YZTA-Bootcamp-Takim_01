@@ -18,6 +18,8 @@
 
 Throughout the journey, players are challenged not only to make meaningful choices, but also to reflect on their own values and judgments. The game combines emotional storytelling with a stylized, atmospheric experience.
 
+You can view our GDD [here](https://docs.google.com/document/d/1kClNftau0TqxSy5Jy_cH9jcZPDbaEEXh9BkOhemMZNs/edit?tab=t.c8bib27idti1).
+
 ---
 
 ## ✨ Game Features
