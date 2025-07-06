@@ -55,3 +55,64 @@ You can view our product backlog [here](https://docs.google.com/spreadsheets/d/1
 - 🧪 Testin
 You can view our Sprint 1 documents [here](https://docs.google.com/document/d/1KqJr02TOCGKzAkYY5Xz3XDDnS2wweSiQ8l22v_3Kgb0/edit?usp=sharing).
 
+---
+
+<details>
+<summary>📄 Sprint 1 Review</summary>
+
+### 🎯 Sprint Goal
+To establish the foundation of the core gameplay loop and create a testable prototype involving NPC dialogue, symbolic item selection, and destination choice mechanics.
+
+### ✅ Completed Work (Partially)
+- Initial structure of NPC and item matching logic implemented
+- Item pickup system in development
+- Basic feedback results shown via console
+- Ship Controle implemented
+- Built Low poly ship model + UV Mapping
+- Sea Shader Graph created.
+
+### 📉 General Evaluation
+The sprint was **partially successful**. While progress was made on core systems, the team could not deliver a fully testable prototype. Time management and consistent team communication were the key issues observed.
+
+### 🎯 Goal Achievement
+Some progress was made toward the sprint objectives, but the sprint goal was only **partially achieved**.
+
+### 🔄 Suggestions for Improvement
+- Improve daily coordination and maintain **consistent Daily Scrums**
+- Strengthen internal task tracking and role clarity
+- Break down tasks into smaller, deliverable pieces
+- Communicate more frequently through Trello and Discord
+
+</details>
+
+---
+
+<details>
+<summary>🌀 Sprint 1 Retrospective</summary>
+
+### ✅ What Went Well
+- Team members communicated clearly and respectfully.
+- Most members were eager to contribute and share ideas.
+- The team generated creative solutions through collaborative brainstorming.
+- Positive team spirit and open participation helped build momentum.
+
+### 🔄 What Could Be Improved
+- Workflow efficiency needs improvement; some delays occurred due to unclear task scopes.
+- A more disciplined and consistent working rhythm would help maintain focus.
+- We need to better manage distractions and technical bottlenecks.
+
+### ⚠️ Challenges & Blockers
+- Technical issues with tools and environment setup slowed progress.
+- Difficulty resolving unexpected bugs in mechanics like the dialogue system and sea navigation.
+- Some mechanics (e.g. ability selection, ship travel) felt complex and raised questions about long-term fun and design clarity.
+
+### 🤝 Team Collaboration
+- Communication and collaboration within the team was overall positive.
+- Everyone was open to feedback and worked constructively together.
+
+### 📌 Suggestions for Next Sprint
+- Improve time management and task clarity to avoid unnecessary rework.
+- Maintain consistent Daily Scrums and check-ins.
+- Focus on getting things done before polishing or expanding.
+
+</details>
