@@ -53,6 +53,7 @@ You can view our product backlog [here](https://docs.google.com/spreadsheets/d/1
 - ✅ Symbolic item pickup and basic sea navigation  
 - ✅ Lighthouse feedback logic (brighten/dim based on choices)   
 - 🧪 Testin
+
 You can view our Sprint 1 documents [here](https://docs.google.com/document/d/1KqJr02TOCGKzAkYY5Xz3XDDnS2wweSiQ8l22v_3Kgb0/edit?usp=sharing).
 
 ---
@@ -82,6 +83,8 @@ Some progress was made toward the sprint objectives, but the sprint goal was onl
 - Strengthen internal task tracking and role clarity
 - Break down tasks into smaller, deliverable pieces
 - Communicate more frequently through Trello and Discord
+
+You can view our Sprint 1 Details [here](https://docs.google.com/document/d/1KqJr02TOCGKzAkYY5Xz3XDDnS2wweSiQ8l22v_3Kgb0/edit?tab=t.lwslhbg5num1).
 
 </details>
 
