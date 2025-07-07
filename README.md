@@ -172,13 +172,24 @@ You can view our Sprint 1 Details [here](https://docs.google.com/document/d/1KqJ
 
 ### 👨‍🔧 Task Assignments & Estimates
 
-| Member   | Assigned Tasks                                         | Estimated Time |
-|----------|--------------------------------------------------------|----------------|
-| Çağatay  | PB-01, PB-03, PB-04                                    | 32 hrs         |
-| Emin     | PB-02, PB-18, PB-05                                    | 30 hrs         |
-| Şimal    | PB-22, PB-20, UI elements                              | 36 hrs         |
-| Yağmur   | PB-06, PB-11                                           | 18 hrs         |
-| Yunus    | PB-09, support & testing                               | 10 hrs         |
+| Task                                          | Assigned Members                 | Estimated Time |
+|-----------------------------------------------|----------------------------------|----------------|
+| Demo Gameplay Test & Internal Feedback        | Whole Team                       | 4 hrs          |
+| Mid-Sprint Review Meeting Planning            | Çağatay                          | 2 hrs          |
+| Symbolic Item Design (Low Poly Models)        | Çağatay, Emin, Şimal             | 10 hrs         |
+| Dialogue System Architecture (SOLID-based)    | Çağatay, Emin, Şimal             | 14 hrs         |
+| Item–Island–NPC Matching Logic Sheet          | Çağatay                          | 4 hrs          |
+| Scene & Prefab Structure in Unity             | Çağatay, Emin                    | 8 hrs          |
+| Input System Setup & Testing                  | Yağmur                           | 4 hrs          |
+| Temporary Music & SFX Research                | Emin                             | 3 hrs          |
+| Lighthouse Feedback Mechanic                  | Yağmur                           | 5 hrs          |
+| Player & NPC Models (2D/3D)                   | Çağatay, Emin, Şimal             | 12 hrs         |
+| UI Mockups & Menu Screens (Basic)             | Emin, Şimal                      | 6 hrs          |
+| Soul Fragment System (Health-like mechanic)   | Emin                             | 5 hrs          |
+| World Design & Level Layout                   | Şimal                            | 10 hrs         |
+| NPC Backstory & Dialogue Writing (2 NPCs)     | Çağatay                          | 6 hrs          |
+
+> 🧮 Total Estimated Time (all members combined): ~93 hrs (within available capacity)
 
 ---
 
