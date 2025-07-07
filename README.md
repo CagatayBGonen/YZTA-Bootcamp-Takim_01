@@ -119,3 +119,94 @@ You can view our Sprint 1 Details [here](https://docs.google.com/document/d/1KqJ
 - Focus on getting things done before polishing or expanding.
 
 </details>
+
+---
+
+<details>
+<summary>🚀 Sprint 2 Planning</summary>
+
+### 🗓️ Sprint Details
+- **Sprint Name:** Sprint 2  
+- **Duration:** July 7 - July 20 (13 days)  
+
+### 👥 Team Members & Capacities
+| Name     | Capacity |
+|----------|----------|
+| Çağatay  | 78 hrs   |
+| Yunus    | 13 hrs   |
+| Yağmur   | 26 hrs   |
+| Şimal    | 52 hrs   |
+| Emin     | 52 hrs   |
+
+---
+
+### 🎯 Sprint Goals
+- Complete core mechanics for the game prototype  
+- Create a basic main menu and entry screens  
+- Complete at least 2 full NPC quest cycles  
+- Implement the feedback system with good/bad ending scenes  
+- Add interactive symbolic item system  
+
+---
+
+### 📌 Sprint Backlog – Selected Tasks
+
+| ID     | Task                             | SP | Priority |
+|--------|----------------------------------|----|----------|
+| PB-01  | NPC Dialogue System              | 8  | Must     |
+| PB-02  | Symbolic Item Spawn & Pickup     | 2  | Must     |
+| PB-03  | Island Judgment & Selection      | 5  | Must     |
+| PB-04  | Feedback System (Endings)        | 5  | Must     |
+| PB-18  | Symbolic Item Visuals            | 3  | Must     |
+| PB-20  | NPC Placeholders & Visuals       | 3  | Must     |
+| PB-22  | World Design                     | 5  | Must     |
+| PB-06  | Lighthouse Feedback              | 2  | Should   |
+| PB-09  | Random NPC Spawn & Flow          | 5  | Should   |
+| PB-11  | Music & Sound System             | 3  | Should   |
+| PB-05  | Soul Fragment System             | 3  | Could    |
+
+**Total Story Points:** 44  
+**Must-Complete Minimum SP:** 31
+
+---
+
+### 👨‍🔧 Task Assignments & Estimates
+
+| Member   | Assigned Tasks                                         | Estimated Time |
+|----------|--------------------------------------------------------|----------------|
+| Çağatay  | PB-01, PB-03, PB-04                                    | 32 hrs         |
+| Emin     | PB-02, PB-18, PB-05                                    | 30 hrs         |
+| Şimal    | PB-22, PB-20, UI elements                              | 36 hrs         |
+| Yağmur   | PB-06, PB-11                                           | 18 hrs         |
+| Yunus    | PB-09, support & testing                               | 10 hrs         |
+
+---
+
+### 🧪 What Happens If Sprint Goal is Reached?
+- The player can interact with an NPC and sail to an island  
+- The player collects a symbolic item and makes a decision  
+- Feedback is given through good/bad ending scenes  
+- A playable vertical-slice demo becomes available with 2 complete NPC cycles  
+- The demo can be used for internal testing and presentation
+
+---
+
+### ✅ Definition of Done (DoD)
+- Integrated and functional in-game  
+- Visual and audio assets are implemented (placeholder or final)  
+- Feature tested and confirmed by at least one team member  
+- Code is committed to GitHub with clear messages  
+- Related documentation is available in Notion or project folders  
+
+---
+
+### ⚠️ Risks and Mitigations
+
+| Risk                                  | Description                                                   | Mitigation                                     |
+|---------------------------------------|---------------------------------------------------------------|------------------------------------------------|
+| NPC dialogue content is not ready     | Dialogue system may not be usable for demo                    | Use placeholders and start writing early       |
+| Developer capacity issue              | Yunus has limited time during sprint                          | Assign smaller, supportive tasks               |
+| Ability system undefined              | PB-07/PB-08 remain unclear                                    | Defer to Sprint 3 and hold design meeting      |
+| Feedback system complexity            | Gameplay feedback might feel weak or unclear  
+
+</details>
