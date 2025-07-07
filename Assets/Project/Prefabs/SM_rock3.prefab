@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 7160358919739292969}
   - component: {fileID: 6734228813550515354}
   - component: {fileID: 4399101848175999023}
+  - component: {fileID: 2197524382501743026}
   m_Layer: 0
   m_Name: SM_rock3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7160358919739292969
 Transform:
@@ -64,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1910860673104795630, guid: d55a165d822dab64299634a624214eeb, type: 3}
+  - {fileID: 2100000, guid: d2806086e1cac4841b3bd0e7510b8bcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,3 +87,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2197524382501743026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8189769808485723165}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0169055, y: 1.7084442, z: 1.9007831}
+  m_Center: {x: 0.014418602, y: 0.86377496, z: 0.10348615}

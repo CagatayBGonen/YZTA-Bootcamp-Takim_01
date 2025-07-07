@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.21
+  m_AmbientIntensity: 3.08
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.44612545, g: 0.5032027, b: 0.64779866, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -326,8 +326,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435496017}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.068120115, y: 0.7207522, z: -0.0716158, w: -0.6861102}
-  m_LocalPosition: {x: 556.9051, y: 13.502839, z: 324.98947}
+  m_LocalRotation: {x: 0.011995301, y: 0.029015541, z: 0.00027409196, w: -0.999507}
+  m_LocalPosition: {x: 411.6792, y: 21.688683, z: 74.8233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,11 +356,11 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
+  m_StopNaN: 1
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 711494099}
   - component: {fileID: 711494098}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Sea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,7 +574,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 388, y: 0.6, z: 313}
-  m_LocalScale: {x: 36, y: 36, z: 18.22932}
+  m_LocalScale: {x: 36, y: 36, z: 54.68796}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -653,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 1875806741}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 477.55115, y: 0.5723191, z: 301.22617}
+  m_LocalPosition: {x: 458, y: 0.5723191, z: 198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -728,7 +728,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301207250144172836, guid: 598c984db8cc73942846b5bf1052ec7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.919891
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 2301207250144172836, guid: 598c984db8cc73942846b5bf1052ec7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2301207250144172836, guid: 598c984db8cc73942846b5bf1052ec7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9523926
+      value: -32
       objectReference: {fileID: 0}
     - target: {fileID: 2301207250144172836, guid: 598c984db8cc73942846b5bf1052ec7e, type: 3}
       propertyPath: m_LocalRotation.w
