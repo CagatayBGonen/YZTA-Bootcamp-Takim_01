@@ -5,6 +5,11 @@ public class DialogueManager : MonoBehaviour
     public DialogueNodeSO currentNode;
     public TraitSet playerTraits;
 
+
+    private void Start()
+    {
+        StartDialogue(currentNode);
+    }
     public void StartDialogue(DialogueNodeSO startNode)
     {
         currentNode = startNode;
@@ -18,7 +23,8 @@ public class DialogueManager : MonoBehaviour
         {
             int playerValue = playerTraits.GetTraitLevel(currentNode.traitCheck.TraitType);
             bool result = currentNode.traitCheck.Evaluate(playerValue);
-            currentNode = result ? currentNode.successNode : currentNode.failueNode;
+            currentNode = result ? currentNode.successNode : currentNode.failureNode;
+            Debug.Log(result ? "SUCCESS branch" : "FAILURE branch");
         } else
         {
             foreach(var option in currentNode.responseOptions)

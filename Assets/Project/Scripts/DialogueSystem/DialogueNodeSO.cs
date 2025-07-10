@@ -9,5 +9,5 @@ public class DialogueNodeSO : ScriptableObject
 
     public List<ResponseOptionSO> responseOptions;
     public DialogueNodeSO successNode;
-    public DialogueNodeSO failueNode;
+    public DialogueNodeSO failureNode;
 }
