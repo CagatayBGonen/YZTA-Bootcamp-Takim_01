@@ -1,16 +1,13 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class DialogueNodeSO : MonoBehaviour
+[CreateAssetMenu(menuName = "Dialogue/Node")]
+public class DialogueNodeSO : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [TextArea(2, 6)] public string dialogueText;
+    public TraitCondition traitCheck;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<ResponseOptionSO> responseOptions;
+    public DialogueNodeSO successNode;
+    public DialogueNodeSO failueNode;
 }

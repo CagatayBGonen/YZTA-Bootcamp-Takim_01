@@ -1,16 +1,15 @@
 using UnityEngine;
 
+[System.Serializable]
 public class TraitCondition : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public TraitType TraitType;
+    public int threshold;
+    public bool requiresRoll;
 
-    // Update is called once per frame
-    void Update()
+    public bool Evaluate(int traitValue)
     {
-        
+        int roll = Random.Range(0, 21); // d20'e gore
+        return (roll + traitValue) >= threshold;
     }
 }

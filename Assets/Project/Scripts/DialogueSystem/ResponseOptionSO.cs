@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class ResponseOptionSO : MonoBehaviour
+[CreateAssetMenu(menuName = "Dialogue/ResponseOption")]
+public class ResponseOptionSO : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string responseText;
+    public DialogueNodeSO nextNode;
+    public TraitType requiredTrait;
+    public int requiredLevel;
 }
