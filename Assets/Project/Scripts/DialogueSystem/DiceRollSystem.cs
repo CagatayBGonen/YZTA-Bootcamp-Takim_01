@@ -2,15 +2,9 @@ using UnityEngine;
 
 public class DiceRollSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static bool RollWithModifier(int threshold, int traitValue)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        int roll = Random.Range(0, 21); // d20'e gore
+        return roll + traitValue >= threshold;
     }
 }
