@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class TraitType : MonoBehaviour
+public enum TraitType
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    Empath,
+    Logic,
+    Skepticism
 }
+    
+
