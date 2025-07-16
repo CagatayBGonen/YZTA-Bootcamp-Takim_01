@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "NPC Giri\u015F konu\u015Fmas\u0131"
   dialogueOptions:
-  - {fileID: 11400000, guid: d8c04aa5b9dc38446b64a07862261e7d, type: 2}
+  - {fileID: 11400000, guid: 04508b4f9e4b88a45af2bd97c11bf5df, type: 2}

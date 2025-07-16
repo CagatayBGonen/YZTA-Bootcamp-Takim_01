@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9507af308c9a8f41874392fd07180c5, type: 3}
   m_Name: NPC_01_Q01
   m_EditorClassIdentifier: 
-  dialogueText: 
-  dialogueOptions: []
+  dialogueText: "Bana ne olacak \u015Fimdi?"
+  dialogueOptions:
+  - {fileID: 11400000, guid: a7dd1ef09cbe35f4d99eed29048e6b15, type: 2}
+  - {fileID: 11400000, guid: d8c04aa5b9dc38446b64a07862261e7d, type: 2}

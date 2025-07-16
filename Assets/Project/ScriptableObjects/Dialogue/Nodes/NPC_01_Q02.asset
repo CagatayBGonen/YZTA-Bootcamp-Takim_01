@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9507af308c9a8f41874392fd07180c5, type: 3}
   m_Name: NPC_01_Q02
   m_EditorClassIdentifier: 
-  dialogueText: 
-  dialogueOptions: []
+  dialogueText: "Ne yarg\u0131lanacak m\u0131y\u0131m? Ben iyi birisiyim. Hem iyilikler
+    yapt\u0131m."
+  dialogueOptions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

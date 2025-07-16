@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159df16854b3af445b8d3b6d38921c6d, type: 3}
   m_Name: Option_Start
   m_EditorClassIdentifier: 
-  optionText: 
+  optionText: "\xF6teki d\xFCnyaya ho\u015Fgeldin"
   traitCheck:
     requiredTrait: 0
     requiredLevel: 0
     requiresRoll: 0
-  successNode: {fileID: 0}
+  successNode: {fileID: 11400000, guid: 78af562991f4952418aeeefcfac5739c, type: 2}
   failureNode: {fileID: 0}
-  optionState: 0
+  optionState: 2
