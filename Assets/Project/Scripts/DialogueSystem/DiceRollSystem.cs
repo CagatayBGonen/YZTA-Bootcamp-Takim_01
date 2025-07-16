@@ -1,16 +1,16 @@
 using UnityEngine;
-
+// This class control the dice and success
 public class DiceRollSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static int RollDice()
     {
-        
+        return Random.Range(1, 21); // dice range
     }
 
-    // Update is called once per frame
-    void Update()
+    public static bool Evaluate(int traitLevel, int requiredThreshold, out int finalRoll)
     {
-        
+        int roll = RollDice();
+        finalRoll = roll + traitLevel;
+        return finalRoll >= requiredThreshold;
     }
 }
