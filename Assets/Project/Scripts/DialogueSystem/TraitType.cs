@@ -2,9 +2,9 @@ using UnityEngine;
 
 public enum TraitType
 {
-    Empath,
+    // These are the traits that player will choose.
+    None,
+    Empathy,
     Logic,
-    Skepticism
+    Encyclopedia
 }
-    
-

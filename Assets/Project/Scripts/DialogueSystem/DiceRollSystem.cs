@@ -1,10 +1,16 @@
 using UnityEngine;
-
+// This class control the dice and success
 public class DiceRollSystem : MonoBehaviour
 {
-    public static bool RollWithModifier(int threshold, int traitValue)
+    public static int RollDice()
     {
-        int roll = Random.Range(0, 21); // d20'e gore
-        return roll + traitValue >= threshold;
+        return Random.Range(1, 21); // dice range
+    }
+
+    public static bool Evaluate(int traitLevel, int requiredThreshold, out int finalRoll)
+    {
+        int roll = RollDice();
+        finalRoll = roll + traitLevel;
+        return finalRoll >= requiredThreshold;
     }
 }

@@ -10,13 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9507af308c9a8f41874392fd07180c5, type: 3}
-  m_Name: Success_Marek
+  m_Name: NPC_01_Success
   m_EditorClassIdentifier: 
-  dialogueText: Talking with someone that understand this... its refreshing
-  traitCheck:
-    TraitType: 0
-    threshold: 0
-    requiresRoll: 0
-  responseOptions: []
-  successNode: {fileID: 0}
-  failueNode: {fileID: 0}
+  dialogueText: "San\u0131r\u0131m ger\xE7ekten beni anlad\u0131n."
+  dialogueOptions: []

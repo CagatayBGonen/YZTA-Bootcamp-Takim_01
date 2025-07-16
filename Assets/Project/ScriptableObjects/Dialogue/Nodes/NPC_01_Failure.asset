@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25ac754d367ac22439bbbd090f7148e8, type: 3}
-  m_Name: ExampleResponse_01
+  m_Script: {fileID: 11500000, guid: e9507af308c9a8f41874392fd07180c5, type: 3}
+  m_Name: NPC_01_Failure
   m_EditorClassIdentifier: 
-  responseText: "\xD6rnek bir cevap"
-  nextNode: {fileID: 0}
-  requiredTrait: 0
-  requiredLevel: 0
+  dialogueText: "Yine yanl\u0131\u015F ki\u015Fiye denk geldim galiba..."
+  dialogueOptions: []

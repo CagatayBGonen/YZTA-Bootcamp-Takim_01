@@ -10,13 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9507af308c9a8f41874392fd07180c5, type: 3}
-  m_Name: Failure_Marek
+  m_Name: NPC_01_Start
   m_EditorClassIdentifier: 
-  dialogueText: Anyway... you wouldn't understand
-  traitCheck:
-    TraitType: 0
-    threshold: 0
-    requiresRoll: 0
-  responseOptions: []
-  successNode: {fileID: 0}
-  failureNode: {fileID: 0}
+  dialogueText: "NPC Giri\u015F konu\u015Fmas\u0131"
+  dialogueOptions:
+  - {fileID: 11400000, guid: 04508b4f9e4b88a45af2bd97c11bf5df, type: 2}

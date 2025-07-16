@@ -1,36 +1,101 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+/* This class deals with:
+ *  - Current Node/dialogue
+ *  - Answer options
+ *  - Next Node
+ *  - Trait Level check
+ *  - Dice Success
+ *  - UI call
+ */
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Connections")]
     public DialogueNodeSO currentNode;
     public TraitSet playerTraits;
 
+    [Header("UI Manager")]
+    public DialogueUIManager uiManager;
 
-    private void Start()
-    {
-        StartDialogue(currentNode);
-    }
-    public void StartDialogue(DialogueNodeSO startNode)
+    public void StartDialogue(DialogueNodeSO startNode) // start the dialogue system with the first node
     {
         currentNode = startNode;
         ShowNode();
     }
-    public void ShowNode()
+    void Start()
     {
-        Debug.Log("NPC says: " + currentNode.dialogueText);
+        StartDialogue(currentNode);    
+    }
 
-        if (currentNode.traitCheck.requiresRoll)
+    public void ShowNode() // Sends the Node Text and Options to the UI
+    {
+        if(currentNode == null)
         {
-            int playerValue = playerTraits.GetTraitLevel(currentNode.traitCheck.TraitType);
-            bool result = currentNode.traitCheck.Evaluate(playerValue);
-            currentNode = result ? currentNode.successNode : currentNode.failureNode;
-            Debug.Log(result ? "SUCCESS branch" : "FAILURE branch");
-        } else
-        {
-            foreach(var option in currentNode.responseOptions)
-            {
-                Debug.LogWarning("Option: " +  option.responseText);
-            }
+            Debug.Log("CurrentNode is null");
+            return;
         }
+
+        uiManager.DisplayDialogue(currentNode.dialogueText);
+        
+        List<DialogueOptionSO> options = currentNode.dialogueOptions;
+
+        foreach(DialogueOptionSO option in options)
+        {
+            // Here we recieve the info of Trait
+            TraitType requiredTrait = option.traitCheck.requiredTrait;
+            int requiredLevel = option.traitCheck.requiredLevel;
+            int playerLevel = playerTraits.GetTraitLevel(requiredTrait);
+
+            // As default it is locked
+            DialogueState state = DialogueState.Locked;
+
+            // Here we are dealing with state of the dialogue
+            if (requiredTrait == TraitType.None || playerLevel >= requiredLevel)
+            {
+                state = option.traitCheck.requiresRoll ? DialogueState.Available : DialogueState.Success;
+            }
+            else if (playerLevel > 0)
+            {
+                state = DialogueState.Undiscovered;
+            }
+
+            option.optionState = state;
+
+            uiManager.CreateOptionButton(option, OnOptionSelected);
+            Debug.Log($"Option '{option.optionText}' - Trait: {option.traitCheck.requiredTrait}, Required: {option.traitCheck.requiredLevel}, Roll?: {option.traitCheck.requiresRoll}, State: {option.optionState}");
+
+        }
+
+
+    }
+    public void OnOptionSelected(DialogueOptionSO selectedOption) // Checks trait and dice conditions for selected option
+    {
+        StartCoroutine(HandleOptionSelection(selectedOption));
+    }
+    private IEnumerator HandleOptionSelection(DialogueOptionSO selectedOption)
+    {
+        int playerLevel = playerTraits.GetTraitLevel(selectedOption.traitCheck.requiredTrait);
+        int required = selectedOption.traitCheck.requiredLevel;
+
+        if (selectedOption.traitCheck.requiresRoll)
+        {
+            bool success = DiceRollSystem.Evaluate(playerLevel, required, out int finalRoll);
+
+            uiManager.ShowRollResult(playerLevel, finalRoll, required, success);
+
+            yield return new WaitForSeconds(2f); // 2 saniye bekle
+
+            selectedOption.optionState = success ? DialogueState.Success : DialogueState.Failed;
+            currentNode = success ? selectedOption.successNode : selectedOption.failureNode;
+        }
+        else
+        {
+            currentNode = selectedOption.successNode;
+            selectedOption.optionState = DialogueState.Success;
+        }
+
+        uiManager.ClearOptions();
+        ShowNode();
     }
 }
