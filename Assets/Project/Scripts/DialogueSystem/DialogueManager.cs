@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /* This class deals with:
@@ -22,6 +23,10 @@ public class DialogueManager : MonoBehaviour
         currentNode = startNode;
         ShowNode();
     }
+    void Start()
+    {
+        StartDialogue(currentNode);    
+    }
 
     public void ShowNode() // Sends the Node Text and Options to the UI
     {
@@ -31,7 +36,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // uiManager.DisplayDialogue(currentNode.dialogueText);
+        uiManager.DisplayDialogue(currentNode.dialogueText);
         
         List<DialogueOptionSO> options = currentNode.dialogueOptions;
 
@@ -57,11 +62,18 @@ public class DialogueManager : MonoBehaviour
 
             option.optionState = state;
 
-            // uiManager.CreateOptionButton(option, () => OnOptionSelected(option));
+            uiManager.CreateOptionButton(option, OnOptionSelected);
+            Debug.Log($"Option '{option.optionText}' - Trait: {option.traitCheck.requiredTrait}, Required: {option.traitCheck.requiredLevel}, Roll?: {option.traitCheck.requiresRoll}, State: {option.optionState}");
+
         }
-         
+
+
     }
     public void OnOptionSelected(DialogueOptionSO selectedOption) // Checks trait and dice conditions for selected option
+    {
+        StartCoroutine(HandleOptionSelection(selectedOption));
+    }
+    private IEnumerator HandleOptionSelection(DialogueOptionSO selectedOption)
     {
         int playerLevel = playerTraits.GetTraitLevel(selectedOption.traitCheck.requiredTrait);
         int required = selectedOption.traitCheck.requiredLevel;
@@ -69,10 +81,12 @@ public class DialogueManager : MonoBehaviour
         if (selectedOption.traitCheck.requiresRoll)
         {
             bool success = DiceRollSystem.Evaluate(playerLevel, required, out int finalRoll);
-            //uiManager.ShowRollResult(playerLevel, finalRoll, required, success);
+
+            uiManager.ShowRollResult(playerLevel, finalRoll, required, success);
+
+            yield return new WaitForSeconds(2f); // 2 saniye bekle
 
             selectedOption.optionState = success ? DialogueState.Success : DialogueState.Failed;
-
             currentNode = success ? selectedOption.successNode : selectedOption.failureNode;
         }
         else
@@ -81,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             selectedOption.optionState = DialogueState.Success;
         }
 
-        //uiManager.ClearOptions();
+        uiManager.ClearOptions();
         ShowNode();
     }
 }
