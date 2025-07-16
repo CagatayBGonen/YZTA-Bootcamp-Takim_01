@@ -1,16 +1,17 @@
 using UnityEngine;
+// This SO represent the answer options in dialogues
 
-public class DialogueOptionSO : MonoBehaviour
+[CreateAssetMenu(menuName = "Dialogue/Option")]
+public class DialogueOptionSO : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [TextArea(2,4)] 
+    public string optionText; // The text of the answer option
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public DialogueTraitCheck traitCheck;
+
+    public DialogueNodeSO successNode; // The dialogue node to go after a successful dice
+    public DialogueNodeSO failureNode; // The dialogue node to go after a failed dice
+
+    [HideInInspector]
+    public DialogueState optionState = DialogueState.Undiscovered;
 }

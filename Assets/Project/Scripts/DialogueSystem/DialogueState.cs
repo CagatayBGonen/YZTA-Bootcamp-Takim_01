@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class DialogueState : MonoBehaviour
+public enum DialogueState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Represent the dialogue states for that NPC
+    Undiscovered, // not yet seen
+    Success,      // Successfully discovered 
+    Failed,       // Failed the dailogue   
+    Locked        // Not having enough trait level
 }
