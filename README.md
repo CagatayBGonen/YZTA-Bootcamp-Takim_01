@@ -48,6 +48,9 @@ You can view our product backlog [here](https://docs.google.com/spreadsheets/d/1
 
 ---
 
+<details>
+<summary>Sprint 1</summary>
+  
 ## 🚀 Sprint 1 Focus
 - ✅ Core gameplay loop prototype (dialog → item → island → outcome)  
 - ✅ Symbolic item pickup and basic sea navigation  
@@ -120,7 +123,12 @@ You can view our Sprint 1 Details [here](https://docs.google.com/document/d/1KqJ
 
 </details>
 
+</details>
+
 ---
+
+<details>
+  <summary>Sprint 2</summary>
 
 <details>
 <summary>🚀 Sprint 2 Planning</summary>
@@ -219,5 +227,73 @@ You can view our Sprint 1 Details [here](https://docs.google.com/document/d/1KqJ
 | Developer capacity issue              | Yunus has limited time during sprint                          | Assign smaller, supportive tasks               |
 | Ability system undefined              | PB-07/PB-08 remain unclear                                    | Defer to Sprint 3 and hold design meeting      |
 | Feedback system complexity            | Gameplay feedback might feel weak or unclear  
+
+</details>
+
+---
+
+<details>
+<summary>🎯 Sprint 2 Review</summary>
+
+🎯 **Sprint Goal**  
+Complete core mechanics and produce a playable demo.
+
+✅ **Completed Work (Partially)**  
+- World design and terrain elements created  
+- Input controls implemented (movement & interaction)  
+- Steerable flagpole system for ship navigation completed  
+- Ship movement groundwork laid  
+
+📉 **General Evaluation**  
+Design and visual progress moved steadily; however, coding and integration of core mechanics fell behind schedule. The team was not able to meet the expected performance for this sprint, especially in terms of functionality.
+
+🎯 **Goal Achievement**  
+While world design and some control mechanics reached their goals, other key gameplay systems remain incomplete. The sprint objective was only partially achieved.
+
+🔄 **Suggestions for Improvement**  
+- Increase initiative and active contribution from all team members  
+- Communicate early when facing blockers or slow progress  
+- Collaborate more closely to resolve issues as they arise  
+- Work more efficiently and stay aligned with sprint goals  
+
+🚀 **Next Sprint Expectations**  
+- Complete remaining mechanics and ensure they function cohesively  
+- Conduct internal testing and polish core gameplay loop  
+- Add engaging elements to the sea environment for a more immersive experience  
+- Aim for a finished and testable version of the game
+
+You can view our Sprint 2 Details [here](https://docs.google.com/document/d/13qSBcFaeSqwXTeBMYIVOtKhawQMs5UyderoI_eiA9e4/edit?tab=t.b69z9n8262vh).
+
+</details>
+
+---
+
+<details>
+<summary>🔍 Sprint 2 Retrospective</summary>
+
+✅ **What went well?**  
+- Team communication slightly improved compared to the previous sprint  
+- We made a clear decision on the core direction and structure of the game design  
+
+📉 **What could have gone better?**  
+- Daily Scrums could have been more consistent and effective  
+- Task ownership and progress could have been communicated more transparently  
+- Work could have been documented more clearly to make it easier for others to contribute  
+- The team could have been more proactive and involved  
+
+🚧 **Were there any blockers or challenges?**  
+- A general lack of motivation negatively impacted performance  
+- Personal schedules and time constraints among team members caused difficulties both in terms of morale and task completion  
+
+🤝 **How was team communication and collaboration?**  
+- On par with the previous sprint — moderate, but not significantly improved  
+
+💡 **Suggestions or wishes for the next sprint**  
+- Everyone needs to step up and take responsibility to push the project to completion  
+- Improve communication, rekindle team spirit, and bring back disengaged members  
+- Focus on motivation and teamwork in this final phase  
+
+</details>
+
 
 </details>
