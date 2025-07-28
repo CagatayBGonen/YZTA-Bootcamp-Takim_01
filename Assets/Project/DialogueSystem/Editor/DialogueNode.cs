@@ -7,6 +7,9 @@ public class DialogueNode : Node
     public string GUID;
     public string DialogueText = "Diyalog buraya yazýlacak.";
 
+    public Port inputPort;
+    public Port outputPort;
+
     public void Draw()
     {
         // Main container
@@ -21,12 +24,12 @@ public class DialogueNode : Node
         mainContainer.Add(textField);
 
         // Input Port
-        Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(float));
+        inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(float));
         inputPort.portName = "Input";
         inputContainer.Add(inputPort);
 
         // Output Port
-        Port outputPort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(float));
+        outputPort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(float));
         outputPort.portName = "Next";
         outputContainer.Add(outputPort);
 

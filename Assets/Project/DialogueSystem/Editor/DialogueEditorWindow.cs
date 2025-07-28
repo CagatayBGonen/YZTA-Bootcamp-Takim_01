@@ -8,17 +8,16 @@ public class DialogueEditorWindow : EditorWindow
 {
     private DialogueGraphView _graphView;
 
-    [MenuItem("Tools/Dialogue Graph")]
+    [MenuItem("Window/Dialogue Graph")]
     public static void Open()
     {
-        var window = GetWindow<DialogueEditorWindow>();
-        window.titleContent = new GUIContent("Dialogue Graph");
+        DialogueEditorWindow wnd = GetWindow<DialogueEditorWindow>();
+        wnd.titleContent = new GUIContent("Dialogue Graph");
     }
 
     private void OnEnable()
     {
         ConstructGraphView();
-       // GenerateToolbar();
     }
 
     private void OnDisable()
@@ -34,19 +33,5 @@ public class DialogueEditorWindow : EditorWindow
         };
         _graphView.StretchToParentSize();
         rootVisualElement.Add(_graphView);
-    }
-
-    private void GenerateToolbar()
-    {
-        var toolbar = new Toolbar();
-
-        var nodeCreateButton = new Button(() =>
-        {
-            //_graphView.CreateNode("Dialogue Node");
-        });
-        nodeCreateButton.text = "Create Node";
-        toolbar.Add(nodeCreateButton);
-
-        rootVisualElement.Add(toolbar);
     }
 }
