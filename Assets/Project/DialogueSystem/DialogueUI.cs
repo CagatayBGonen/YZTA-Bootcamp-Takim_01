@@ -1,33 +1,61 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Canvas))]
 public class DialogueUI : MonoBehaviour, IDialogueView
 {
-    public Text dialogueText;
-    public Transform choicesParent;
+    [Header("UI References")]
+    public TMP_Text dialogueText;
+    [Tooltip("Assign slot Transforms for up to 3 choices")]
+    public Transform[] choiceSlots = new Transform[3];
     public Button choiceButtonPrefab;
 
     private Action<int> onSelected;
+    private Action onContinue;
+    private bool awaitingInput;
+
+    void Update()
+    {
+        if (awaitingInput && Input.GetKeyDown(KeyCode.Space))
+        {
+            awaitingInput = false;
+            onContinue?.Invoke();
+        }
+    }
 
     public void ShowLine(string text)
     {
         ClearChoices();
+        awaitingInput = false;
         dialogueText.text = text;
     }
 
     public void ShowChoices(string[] options, Action<int> onSelected)
     {
         this.onSelected = onSelected;
+        awaitingInput = false;
         ClearChoices();
-        for (int i = 0; i < options.Length; i++)
+
+        int count = Mathf.Min(options.Length, choiceSlots.Length);
+        for (int i = 0; i < count; i++)
         {
-            var btn = Instantiate(choiceButtonPrefab,choicesParent);
+            if (choiceSlots[i] == null) continue;
+            var btn = Instantiate(choiceButtonPrefab, choiceSlots[i]);
             int index = i;
-            btn.GetComponentInChildren<Text>().text = options[i];
+            var tmp = btn.GetComponentInChildren<TMP_Text>();
+            if (tmp != null) tmp.text = options[i];
             btn.onClick.AddListener(() => Select(index));
         }
+    }
+
+    public void ShowEndPrompt(string prompt, Action onContinue)
+    {
+        ClearChoices();
+        dialogueText.text += "\n\n" + prompt;
+        this.onContinue = onContinue;
+        awaitingInput = true;
     }
 
     public void EndDialogue()
@@ -38,9 +66,13 @@ public class DialogueUI : MonoBehaviour, IDialogueView
 
     private void ClearChoices()
     {
-        foreach(Transform child in choicesParent)
+        foreach (var slot in choiceSlots)
         {
-            Destroy(child.gameObject);
+            if (slot == null) continue;
+            foreach (Transform child in slot)
+            {
+                Destroy(child.gameObject);
+            }
         }
     }
 

@@ -25,7 +25,7 @@ public class DialogueManager
 
         if(node.choices == null || node.choices.Count == 0)
         {
-            view.EndDialogue();
+            view.ShowEndPrompt("[Press Space to close]", () => view.EndDialogue());
             return;
         }
 
@@ -44,7 +44,7 @@ public class DialogueManager
             }
             else
             {
-                view.EndDialogue();
+                view.ShowEndPrompt("[Press Space to close]", () => view.EndDialogue());
             }
         });
     }

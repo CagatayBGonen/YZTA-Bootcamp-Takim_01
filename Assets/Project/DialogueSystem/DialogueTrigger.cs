@@ -14,10 +14,13 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (!other.CompareTag("Player"))
         {
+            Debug.Log("Collided with somthing else");
             return;
         }
+        Debug.Log("Collided with Player");
         dialogueManager.StartDialogue(graph);
     }
 }
