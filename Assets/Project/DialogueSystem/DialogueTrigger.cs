@@ -4,6 +4,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public DialogueGraphSO graph;
     public DialogueUI dialogueUI;
+    public GameObject player;
 
     private DialogueManager dialogueManager;
 
@@ -22,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         Debug.Log("Collided with Player");
         dialogueManager.StartDialogue(graph);
-        
+        player.GetComponent<TekneHareket>().enabled = false;
+
     }
 }
