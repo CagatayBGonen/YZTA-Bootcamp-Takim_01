@@ -10,9 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
-  m_Name: LaraDialogue_04
+  m_Name: LaraNode19
   m_EditorClassIdentifier: 
-  text: Evet, babam. Ondan nefret ediyorum.
-  choices:
-  - choiceText: Neler oldu?
-    nextNode: {fileID: 11400000, guid: f9e5bd1c430f67d40be8f666cc90285c, type: 2}
+  text: "[Karar\u0131n\u0131 ver, yola \xE7\u0131k]"
+  choices: []

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
-  m_Name: LaraDialogue_09
+  m_Name: LaraNode16
   m_EditorClassIdentifier: 
-  text: "Hem de nas\u0131l. Ben fizik, ablam ise matematik olimpiyatlar\u0131nda
-    alt\u0131n madalyalar kazanm\u0131\u015Ft\u0131k."
+  text: "Zaten o orada ne yapabilirdi ki. Yabanc\u0131 dili bile yok. "
   choices:
-  - choiceText: Peki baban ne alaka?
-    nextNode: {fileID: 0}
+  - choiceText: "Ablan\u0131 sevmiyor muydun?"
+    nextNode: {fileID: 11400000, guid: 97ea1ee2de13aeb42b89088b7049a3a3, type: 2}
+  - choiceText: "Onun bundan haberi var m\u0131yd\u0131?"
+    nextNode: {fileID: 11400000, guid: 97ea1ee2de13aeb42b89088b7049a3a3, type: 2}
