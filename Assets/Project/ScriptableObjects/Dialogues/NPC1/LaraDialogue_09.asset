@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
-  m_Name: LaraDialogue_01
+  m_Name: LaraDialogue_09
   m_EditorClassIdentifier: 
-  text: Ben Lara.
+  text: "Hem de nas\u0131l. Ben fizik, ablam ise matematik olimpiyatlar\u0131nda
+    alt\u0131n madalyalar kazanm\u0131\u015Ft\u0131k."
   choices:
-  - choiceText: "Eveet Lara, neden buradas\u0131n?"
-    nextNode: {fileID: 11400000, guid: a3db8a4c685f9e847b8b00be15460eb6, type: 2}
-  - choiceText: "Nas\u0131l \xF6ld\xFCn?"
-    nextNode: {fileID: 11400000, guid: a3db8a4c685f9e847b8b00be15460eb6, type: 2}
+  - choiceText: Peki baban ne alaka?
+    nextNode: {fileID: 0}

@@ -16,4 +16,4 @@ MonoBehaviour:
     buydu."
   choices:
   - choiceText: Neler oldu?
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: f9e5bd1c430f67d40be8f666cc90285c, type: 2}

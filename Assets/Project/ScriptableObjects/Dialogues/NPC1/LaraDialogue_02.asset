@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
   m_Name: LaraDialogue_02
   m_EditorClassIdentifier: 
-  text: 
-  choices: []
+  text: "Her \u015Fey babam y\xFCz\xFCnden oldu. O bana izin verseydi..."
+  choices:
+  - choiceText: '?'
+    nextNode: {fileID: 11400000, guid: 1b864dbf1d3562f488403b60061c96e0, type: 2}
+  - choiceText: "Baban m\u0131?"
+    nextNode: {fileID: 11400000, guid: 9d535d3afc8d2244d9c56be76e81dec5, type: 2}
