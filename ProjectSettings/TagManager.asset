@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - NPC
+  - Hell
+  - Heaven
+  - Reborn
   layers:
   - Default
   - TransparentFX

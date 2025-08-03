@@ -8,6 +8,7 @@ public class DialogueUI : MonoBehaviour, IDialogueView
 {
     [Header("UI References")]
     public TMP_Text dialogueText;
+    public GameObject dialogueRoot;
     [Tooltip("Assign slot Transforms for up to 3 choices")]
     public Transform[] choiceSlots = new Transform[3];
     public Button choiceButtonPrefab;
@@ -27,6 +28,7 @@ public class DialogueUI : MonoBehaviour, IDialogueView
 
     public void ShowLine(string text)
     {
+        dialogueRoot.SetActive(true);
         ClearChoices();
         awaitingInput = false;
         dialogueText.text = text;
@@ -62,6 +64,7 @@ public class DialogueUI : MonoBehaviour, IDialogueView
     {
         dialogueText.text = string.Empty;
         ClearChoices();
+        dialogueRoot.SetActive(false);
     }
 
     private void ClearChoices()

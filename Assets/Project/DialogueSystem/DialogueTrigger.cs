@@ -22,5 +22,6 @@ public class DialogueTrigger : MonoBehaviour
         }
         Debug.Log("Collided with Player");
         dialogueManager.StartDialogue(graph);
+        
     }
 }

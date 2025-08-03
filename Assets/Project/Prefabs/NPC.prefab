@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6356854921951746573
+--- !u!1 &8183346069364127756
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6318200107904396410}
-  - component: {fileID: 4897537222419682982}
-  - component: {fileID: 8149061047632363452}
-  - component: {fileID: 8800576047440229414}
+  - component: {fileID: 4485287479541150915}
+  - component: {fileID: 3191263934558450174}
+  - component: {fileID: 4224932625554963181}
+  - component: {fileID: 8875663265421999852}
+  - component: {fileID: 4912308290408673831}
   m_Layer: 0
-  m_Name: SM_Pier
-  m_TagString: Hell
+  m_Name: NPC
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6318200107904396410
+--- !u!4 &4485287479541150915
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356854921951746573}
+  m_GameObject: {fileID: 8183346069364127756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 581.8451, y: 0.60806066, z: 173.85074}
+  m_LocalPosition: {x: 9.96, y: 1, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4897537222419682982
+--- !u!33 &3191263934558450174
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356854921951746573}
-  m_Mesh: {fileID: -5741174448488666723, guid: 2b2a2c5dc5612a24eb2d3eb05538e36d, type: 3}
---- !u!23 &8149061047632363452
+  m_GameObject: {fileID: 8183346069364127756}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4224932625554963181
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356854921951746573}
+  m_GameObject: {fileID: 8183346069364127756}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -65,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1910860673104795630, guid: 2b2a2c5dc5612a24eb2d3eb05538e36d, type: 3}
+  - {fileID: 2100000, guid: b9b7e53943c687e4b807ab16ede65d58, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,13 +88,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8800576047440229414
-BoxCollider:
+--- !u!136 &8875663265421999852
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6356854921951746573}
+  m_GameObject: {fileID: 8183346069364127756}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -102,9 +103,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 26.596218, y: 12.759909, z: 29.171242}
-  m_Center: {x: 23.08692, y: 3.0881176, z: -11.801582}
+  serializedVersion: 2
+  m_Radius: 0.7196456
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.050687432}
+--- !u!114 &4912308290408673831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8183346069364127756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6ae7660df46ce4a9467afda0ce30fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000, guid: 368b74cf4f915314ab504277f546ecd1, type: 2}
+  dialogueUI: {fileID: 0}
