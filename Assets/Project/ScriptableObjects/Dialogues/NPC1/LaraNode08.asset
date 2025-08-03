@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
+  m_Name: LaraNode08
+  m_EditorClassIdentifier: 
+  text: "Yani... K\u0131skan\u0131rd\u0131 i\u015Fte. Neden k\u0131skanmas\u0131n
+    ki zaten benim gibi birisini."
+  choices:
+  - choiceText: Senin gibi birisi derken?
+    nextNode: {fileID: 11400000, guid: 245c87f44433ad042aadaae46e2b808b, type: 2}
+  - choiceText: "K\u0131skan\u0131las\u0131 Lara!"
+    nextNode: {fileID: 11400000, guid: 245c87f44433ad042aadaae46e2b808b, type: 2}
+  - choiceText: "\xC7ok kibirli birisine benziyorsun."
+    nextNode: {fileID: 11400000, guid: 245c87f44433ad042aadaae46e2b808b, type: 2}

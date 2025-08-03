@@ -16,3 +16,7 @@ MonoBehaviour:
   choices:
   - choiceText: Kimsin sen?
     nextNode: {fileID: 11400000, guid: 2234eabde2b8c004e95dde100cedbd54, type: 2}
+  - choiceText: "Ho\u015F Geldin yolcu."
+    nextNode: {fileID: 11400000, guid: 2234eabde2b8c004e95dde100cedbd54, type: 2}
+  - choiceText: "Birine mi bak\u0131yorsun."
+    nextNode: {fileID: 11400000, guid: 2234eabde2b8c004e95dde100cedbd54, type: 2}

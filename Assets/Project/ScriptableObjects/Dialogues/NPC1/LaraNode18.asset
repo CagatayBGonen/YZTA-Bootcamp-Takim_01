@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
-  m_Name: LaraDialogue_10
+  m_Name: LaraNode18
   m_EditorClassIdentifier: 
-  text: "Babam! Ba\u015Fka kim olacak."
+  text: "\xD6yle yapmasayd\u0131m kurtulamayacakt\u0131m. O aileden birinin \xE7\u0131kmas\u0131
+    gerekiyordu. "
   choices:
-  - choiceText: "Baban m\u0131?"
-    nextNode: {fileID: 0}
+  - choiceText: ...
+    nextNode: {fileID: 11400000, guid: 9412be3d423ce344c84c30b479a07b1d, type: 2}

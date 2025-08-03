@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
-  m_Name: LaraDialogue_05
+  m_Name: LaraNode15
   m_EditorClassIdentifier: 
-  text: "\u0130lkokuldayken ya\u015F\u0131tlar\u0131m toplama \xE7\u0131karmay\u0131
-    1-2 haftada \xF6\u011Frenirken ben 1 g\xFCnde \xF6\u011Frendim. \xD6\u011Fretmenlerim
-    beni hep elleri ile g\xF6sterir zeki k\u0131z derlerdi."
+  text: "Asl\u0131nda beraber gidecektik ama para bana laz\u0131md\u0131. "
   choices:
-  - choiceText: ...
-    nextNode: {fileID: 11400000, guid: bdd645ad306ba6d4892a7f9d7946b4b1, type: 2}
+  - choiceText: Para ikinize yetmiyor muydu?
+    nextNode: {fileID: 11400000, guid: a45567ac40f21144a99bc0b362c03f7d, type: 2}
+  - choiceText: "Sen ne i\xE7in kulland\u0131n?"
+    nextNode: {fileID: 11400000, guid: a45567ac40f21144a99bc0b362c03f7d, type: 2}

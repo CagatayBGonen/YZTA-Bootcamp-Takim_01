@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd17a6f79488aa54297c9c7b4fa787dc, type: 3}
+  m_Name: LaraNode14
+  m_EditorClassIdentifier: 
+  text: "Beraber gidebilirdik ama ... Art\u0131k bunun bir \xF6nemi yok. O yapamazd\u0131
+    zaten."
+  choices:
+  - choiceText: "Nas\u0131l gidebilirdiniz?"
+    nextNode: {fileID: 11400000, guid: 906922af5e1bd844ba89de24c0eafee3, type: 2}
+  - choiceText: "Neden yapamazd\u0131?"
+    nextNode: {fileID: 11400000, guid: 906922af5e1bd844ba89de24c0eafee3, type: 2}
+  - choiceText: "Ablan\u0131 geride mi b\u0131rakt\u0131n?"
+    nextNode: {fileID: 11400000, guid: 906922af5e1bd844ba89de24c0eafee3, type: 2}
