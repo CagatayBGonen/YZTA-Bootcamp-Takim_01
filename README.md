@@ -1,4 +1,4 @@
-# 🌊 Game Project: Afterlife Guide
+# 🌊 Game Project: Spirit Guide
 
 ## 👥 Team Name: Takım 1
 
@@ -11,10 +11,10 @@
 
 ---
 
-## 🎮 Game Title: Afterlife Guide
+## 🎮 Game Title: Spirit Guide
 
 ### 🧭 Game Description
-*Afterlife Guide* is a narrative-driven puzzle game where the player guides the souls of the departed to their rightful destination in the afterlife. By interpreting emotional clues in NPC dialogue, players must select a symbolic item that represents the soul's unresolved tie to life, and choose the island (Heaven, Hell, or Rebirth) where they belong.
+*Spirit Guide* is a narrative-driven puzzle game where the player guides the souls of the departed to their rightful destination in the afterlife. By interpreting emotional clues in NPC dialogue, players must select a symbolic item that represents the soul's unresolved tie to life, and choose the island (Heaven, Hell, or Rebirth) where they belong.
 
 Throughout the journey, players are challenged not only to make meaningful choices, but also to reflect on their own values and judgments. The game combines emotional storytelling with a stylized, atmospheric experience.
 
