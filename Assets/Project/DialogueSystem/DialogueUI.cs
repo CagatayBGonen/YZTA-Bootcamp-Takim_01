@@ -12,7 +12,7 @@ public class DialogueUI : MonoBehaviour, IDialogueView
     [Tooltip("Assign slot Transforms for up to 3 choices")]
     public Transform[] choiceSlots = new Transform[3];
     public Button choiceButtonPrefab;
-
+    public GameObject player;
     private Action<int> onSelected;
     private Action onContinue;
     private bool awaitingInput;
@@ -65,6 +65,7 @@ public class DialogueUI : MonoBehaviour, IDialogueView
         dialogueText.text = string.Empty;
         ClearChoices();
         dialogueRoot.SetActive(false);
+        player.GetComponent<TekneHareket>().enabled = true;
     }
 
     private void ClearChoices()

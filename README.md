@@ -1,4 +1,4 @@
-# 🌊 Game Project: Afterlife Guide
+# 🌊 Game Project: Spirit Guide
 
 ## 👥 Team Name: Takım 1
 
@@ -11,10 +11,10 @@
 
 ---
 
-## 🎮 Game Title: Afterlife Guide
+## 🎮 Game Title: Spirit Guide
 
 ### 🧭 Game Description
-*Afterlife Guide* is a narrative-driven puzzle game where the player guides the souls of the departed to their rightful destination in the afterlife. By interpreting emotional clues in NPC dialogue, players must select a symbolic item that represents the soul's unresolved tie to life, and choose the island (Heaven, Hell, or Rebirth) where they belong.
+*Spirit Guide* is a narrative-driven puzzle game where the player guides the souls of the departed to their rightful destination in the afterlife. By interpreting emotional clues in NPC dialogue, players must select a symbolic item that represents the soul's unresolved tie to life, and choose the island (Heaven, Hell, or Rebirth) where they belong.
 
 Throughout the journey, players are challenged not only to make meaningful choices, but also to reflect on their own values and judgments. The game combines emotional storytelling with a stylized, atmospheric experience.
 
@@ -292,6 +292,153 @@ You can view our Sprint 2 Details [here](https://docs.google.com/document/d/13qS
 - Everyone needs to step up and take responsibility to push the project to completion  
 - Improve communication, rekindle team spirit, and bring back disengaged members  
 - Focus on motivation and teamwork in this final phase  
+
+</details>
+
+
+</details>
+
+---
+
+<details>
+  <summary>Sprint 3</summary>
+
+<details>
+<summary>🚀 Sprint 3 Planning</summary>
+
+### 🗓️ Sprint Details
+- **Sprint Name:** Sprint 3  
+- **Duration:** July 21 - Agust 03 (13 days)  
+
+### 👥 Team Members & Capacities
+| Name     | Capacity |
+|----------|----------|
+| Çağatay  | 78 hrs   |
+| Yunus    | 13 hrs   |
+| Yağmur   | 26 hrs   |
+| Şimal    | 52 hrs   |
+| Emin     | 52 hrs   |
+
+---
+
+### 🎯 Sprint Goals
+- Complete All mechanics and assemble remaining systems together  
+- Finish the product.    
+
+---
+
+### 📌 Sprint Backlog – Selected Tasks
+
+| ID  | Task                             | SP | Priority |
+|-----|----------------------------------|----|----------|
+| 01  | Dialogue System                  | 8  | Must     |
+| 02  | NPC Story and Dialogues          | 3  | Must     |
+| 03  | Music entegrasion                | 2  | Must     |
+| 04  | Dialogue effects                 | 2  | Must     |
+| 05  | Main Menu and Game entegration   | 2  | Must     |
+| 06  | Win-loose logic                  | 2  | Must     |
+| 07  | Item catch system                | 5  | Must     |
+
+**Total Story Points:** 24  
+**Must-Complete Minimum SP:** 24
+
+---
+
+### 👨‍🔧 Task Assignments & Estimates
+
+| Task                             | Assigned Members                 | Estimated Time |
+|----------------------------------|----------------------------------|----------------|
+| Dialogue System                  | Çağatay                          | 6 hrs          |
+| NPC Story and Dialogues          | Emin                             | 8 hrs          |
+| Music entegrasion                | Şimal                            | 2 hrs          | 
+| Dialogue effects                 | Şimal                            | 2 hrs          |
+| Main Menu and Game entegration   | Çağatay,Yunus                    | 2 hrs          |
+| Win-loose logic                  | Çağatay                          | 3 hrs          |
+| Item catch system                | Yağmur                           | 4 hrs          |
+
+> 🧮 Total Estimated Time (all members combined): ~27 hrs (within available capacity)
+
+---
+
+### 🧪 What Happens If Sprint Goal is Reached?
+- Player can start the game.
+- Player can interact with npc.
+- Choose from dialogues options.
+- Player can control the ship and travel to islannds.
+- Based on NPC, in correct Island player win and loses in incorrect one.
+
+---
+
+### ✅ Definition of Done (DoD)
+- Game functions.
+- Dialogues is read and response can be choosen.
+- Game starts and finishes.  
+
+---
+
+### ⚠️ Risks and Mitigations
+
+| Risk                                  | Description                                                   | Mitigation                                     |
+|---------------------------------------|---------------------------------------------------------------|------------------------------------------------|
+| NPC dialogue content is not ready     | Dialogue system may not be usable for demo                    | Use placeholders and start writing early       |
+| Developer capacity issue              | Yunus has limited time during sprint                          | Assign smaller, supportive tasks               |
+| Feedback system complexity            | Gameplay feedback might feel weak or unclear  
+
+</details>
+
+---
+
+<details>
+<summary>🎯 Sprint 3 Review</summary>
+
+🎯 **Sprint Goal**  
+Finished the product.
+
+✅ **Completed Work**  
+- Dialogue system is finished
+- One npc story and dialogues (Partialy) completed  
+- Main Menu and Game functions together.  
+- Win and Lose works.  
+
+📉 **General Evaluation**  
+Most of tasks finished and we have a functioning game. The quality is low, but overall we have a playable game. In this sprint general development was better compared to other sprints. 
+
+🎯 **Goal Achievement**  
+Goal is achieved.
+
+🔄 **Suggestions for Improvement**  
+- Increase initiative and active contribution from all team members     
+- Work more efficiently 
+
+You can view our Sprint 3 Details [here](https://docs.google.com/document/d/13WOEhlvmNxb76EJKOjDiNwKO6_ov96hYcVV_isK0FE8/edit?tab=t.b69z9n8262vh).
+
+</details>
+
+---
+
+<details>
+<summary>🔍 Sprint 3 Retrospective</summary>
+
+✅ **What went well?**  
+- Team communication improved compared to the previous sprint  
+- We made a clear decision on the core direction and structure of the game design
+- Team work well and finished most of the tasks
+- Goals is reached  
+
+📉 **What could have gone better?**  
+- Daily Scrums could have been more consistent and effective    
+- Work could have been documented more clearly to make it easier for others to contribute    
+
+🚧 **Were there any blockers or challenges?**  
+- Most of the main task had to complete in this sprint which created stressful momemnts   
+
+🤝 **How was team communication and collaboration?**  
+- Communication was definetly more effective and individual conversation made a huge impact  
+
+💡 **Suggestions or wishes for the next project**  
+- Clearer project vision and responsabilities 
+- Better communication and work on team spirits  
+- Focus on motivation and teamwork  
 
 </details>
 
